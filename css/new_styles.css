@@ -1,0 +1,54 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    background: rgba(242, 242, 242, .6);
+    margin: 0;
+  }
+  
+* {
+    box-sizing: border-box
+ }
+
+ .container {
+     display: flex;
+ }
+
+/*NAVBAR*/
+.navbar {
+  background-color: #31b0d5;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navbar .info a {
+    font-weight: 300;
+    color: white;
+    padding: 30px 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  
+  .navbar .title a {
+    font-weight: 300;
+    color: white;
+    padding: 30px 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+/*JUMBOTRON*/
+.jumbotron {
+    height: 50vh; /* height to 100% of view height */
+    background: #f8f8f8; /* background color to white-gray */
+    /* margin-bottom: 0; no bottom margin   */
+    border: 10px black;
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+  }
