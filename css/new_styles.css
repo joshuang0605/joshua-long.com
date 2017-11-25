@@ -10,7 +10,9 @@ body {
   font-family: 'Raleway';
 }
 
-/*--------navigation--------*/
+/*--------
+navigation
+--------*/
 .menu-container {
   color: #fff;
   background-color: #5995DA;
@@ -52,7 +54,15 @@ body {
   align-items: center;
 }
 
-/*---------portfolio--------*/
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*---------
+portfolio
+--------*/
 .photo-grid-container {
   display: flex;
   justify-content: center;
@@ -81,7 +91,9 @@ body {
   height: 300px;
 }
 
-/*------footer------*/
+/*------
+footer
+------*/
 .footer {
   display: flex;
   justify-content: space-between;
