@@ -50,9 +50,6 @@ nav a {
 .header-container {
   color: #5995DA;
   background-color: #D6E9FE;
-  border: 5px solid black;
-  width: 100vw;
-  box-sizing: border-box;
   height: 300px;
   display: flex;
   justify-content: space-between;
