@@ -1,6 +1,6 @@
 //toggle About button on Nav
 $(".info").on("click", function(){
-    $("header.header-container").slideToggle();
+    $(".header-container").slideToggle();
 });
 
 //make bigger project image
