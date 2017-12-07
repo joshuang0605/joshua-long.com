@@ -9,4 +9,10 @@ GAME RULES:
 
 */
 
-let scores = [0,0];
+var scores, activePlayer, currentScore, dice
+scores = [0,0]
+activePlayer = 1;
+dice = Math.floor((Math.random() * 6) + 1);
+
+var score = document.querySelector('#current-' + activePlayer).textContent = dice;
+var diceImg = document.querySelector('.dice').style.display = 'none';
