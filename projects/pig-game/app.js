@@ -120,3 +120,4 @@ Hint: you can read that value with the .value property in Javascript.
 
 /*------------------
 Challenge 3: Add another dice. The player lose his current score when one of them is a 1.
+------------------*/
