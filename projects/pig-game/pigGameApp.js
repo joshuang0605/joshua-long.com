@@ -1,5 +1,5 @@
 //set up variables
-let scores, activePlayer, roundScore, gamePlaying
+let scores, activePlayer, roundScore, gamePlaying, winningScore
 
 init();
 
@@ -14,7 +14,7 @@ document.querySelector('.btn-roll').addEventListener('click', function() {
         //update the dice image number with the random number
         let diceDOM = document.querySelector('.dice');
         diceDOM.style.display = 'block'
-        diceDOM.src = 'dice-' + dice + '.png';
+        diceDOM.src = 'pig-game/img/dice-' + dice + '.png';
     
         //update roundScore if dice is not 1
         if (dice !== 1) {
@@ -38,7 +38,9 @@ document.querySelector('.btn-hold').addEventListener('click', function() {
         document.querySelector('#score-' + activePlayer).textContent = scores[activePlayer];
     
         //check if player won the game
-        if (scores[activePlayer] >= 20) {
+        let input = document.querySelector('.final-score').value;
+        winningScore = input;
+        if (scores[activePlayer] >= winningScore) {
             document.querySelector('.player-' + activePlayer + '-panel').classList.remove('active');
             document.querySelector('.player-' + activePlayer + '-panel').classList.add('winner');
             document.querySelector('#name-' + activePlayer).textContent = "WINNER!";
@@ -76,6 +78,7 @@ function init() {
     activePlayer = 0;
     roundScore = 0;
     gamePlaying = true;
+    winningScore = 100;
     
     //set score in the beginning of Game to 0
     document.querySelector('.dice').style.display = 'none';
