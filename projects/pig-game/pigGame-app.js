@@ -14,7 +14,7 @@ document.querySelector('.btn-roll').addEventListener('click', function() {
         //update the dice image number with the random number
         let diceDOM = document.querySelector('.dice');
         diceDOM.style.display = 'block'
-        diceDOM.src = 'pig-game/img/dice-' + dice + '.png';
+        diceDOM.src = 'img/dice-' + dice + '.png';
     
         //update roundScore if dice is not 1
         if (dice !== 1) {
